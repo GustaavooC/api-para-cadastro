@@ -26,6 +26,8 @@
   .foto::after { content: ""; position: absolute; inset: 0;
     background: linear-gradient(180deg, rgba(7,4,4,.55) 0%, rgba(7,4,4,0) 18%, rgba(7,4,4,0) 46%, rgba(7,4,4,.85) 78%, var(--preto) 100%); }
   .grao { position: absolute; inset: 0; background-image: url('grao.png'); opacity: .16; mix-blend-mode: screen; pointer-events: none; }
+  .layout-fundo .foto { height: 1350px; background-position: center top; }
+  .layout-fundo .foto::after { background: linear-gradient(180deg, rgba(7,4,4,.6) 0%, rgba(7,4,4,0) 14%, rgba(7,4,4,0) 40%, rgba(7,4,4,.82) 62%, var(--preto) 80%); }
   .layout-manchete .foto { height: 800px; background-position: center top; }
   .layout-manchete .foto::after { background: linear-gradient(180deg, rgba(7,4,4,.55) 0%, rgba(7,4,4,0) 16%, rgba(7,4,4,0) 66%, rgba(7,4,4,.8) 88%, var(--preto) 100%); }
   .brilho { position: absolute; inset: 0; background: radial-gradient(70% 50% at 50% 30%, rgba(142,7,16,.55), rgba(7,4,4,0) 70%); }
@@ -78,10 +80,10 @@
     const cta = c.cta || 'ARRASTE PARA O LADO';
     return `<div class="rodape"><span class="fonte">FONTE: ${c.fonte}</span><span class="cta"><span>${cta}</span><i>→</i></span></div>`;
   }
-  const perfil = `<div class="perfil"><span class="marca">BP</span>@seu.perfil</div>`;
+  const perfil = `<div class="perfil"><span class="marca">GR</span>@gabrielrichelmy</div>`;
 
   function capa(c) {
-    if (c.layout === 'foto' || c.layout === 'manchete') {
+    if (['foto', 'manchete', 'fundo'].includes(c.layout)) {
       return `<div class="post layout-${c.layout}"><div class="foto" style="background-image:url('../fotos/${c.foto}.jpg')"></div><div class="grao"></div>${topo(c)}
         <div class="base">${perfil}<h1>${marca(c.head)}</h1><p class="sub">${c.sub}</p>${rodape(c)}</div></div>`;
     }
@@ -118,7 +120,7 @@
     const base = document.querySelector('.base');
     if (h1) {
       let tam = 64;
-      const limite = { foto: 470, manchete: 300 }[c.layout] || 400;
+      const limite = { foto: 470, manchete: 300, fundo: 420 }[c.layout] || 400;
       while (h1.offsetHeight > limite && tam > 40) { tam -= 2; h1.style.fontSize = tam + 'px'; }
     }
     const p = document.querySelector('.slide p');

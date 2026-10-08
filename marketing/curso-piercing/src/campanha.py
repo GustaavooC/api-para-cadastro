@@ -14,7 +14,7 @@ CARROSSEIS = [
         "id": "c01", "data": "08/10", "dia": "qui", "nome": "A briga dos R$120",
         "publico": "Ambos", "impulsionar": False,
         "nota_impulso": "Só orgânico. Tema eleitoral com foto de candidato: não impulsione, cite os dois lados e troque “reprodução” pelo crédito real da foto.",
-        "layout": "manchete", "foto": "lula-pb",
+        "layout": "fundo", "foto": "lula-fundo-pb",
         "tag": "PLANTÃO", "topico": "ELEIÇÕES 2026 · SALÁRIO MÍNIMO",
         "head": "LULA E FLÁVIO BRIGAM POR *R$120* NO SALÁRIO MÍNIMO. UM PIERCER COBRA ISSO [NUM FURO.*]",
         "sub": "R$120 é o aumento proposto pra 2027. *Preço de exemplo; varia por cidade.",
