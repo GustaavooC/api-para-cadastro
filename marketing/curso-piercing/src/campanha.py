@@ -16,8 +16,8 @@ CARROSSEIS = [
         "nota_impulso": "Só orgânico. Tema eleitoral com foto de candidato: não impulsione, cite os dois lados e troque “reprodução” pelo crédito real da foto.",
         "layout": "fundo", "foto": "lula-fundo-pb",
         "tag": "PLANTÃO", "topico": "ELEIÇÕES 2026 · SALÁRIO MÍNIMO",
-        "head": "LULA E FLÁVIO BRIGAM POR *R$120* NO SALÁRIO MÍNIMO. UM PIERCER COBRA ISSO [NUM FURO.*]",
-        "sub": "R$120 é o aumento proposto pra 2027. *Preço de exemplo; varia por cidade.",
+        "head": "LULA E FLÁVIO BRIGAM POR *R$120* NO SALÁRIO MÍNIMO. UM PIERCER COBRA ISSO [NUM FURO.]",
+        "sub": "",
         "fonte": "PLOA 2027: R$1.621 → R$1.741 · FOTO: REPRODUÇÃO",
         "slides": [
             "Capa.",

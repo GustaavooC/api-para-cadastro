@@ -85,10 +85,10 @@
   function capa(c) {
     if (['foto', 'manchete', 'fundo'].includes(c.layout)) {
       return `<div class="post layout-${c.layout}"><div class="foto" style="background-image:url('../fotos/${c.foto}.jpg')"></div><div class="grao"></div>${topo(c)}
-        <div class="base">${perfil}<h1>${marca(c.head)}</h1><p class="sub">${c.sub}</p>${rodape(c)}</div></div>`;
+        <div class="base">${perfil}<h1>${marca(c.head)}</h1>${c.sub ? `<p class="sub">${c.sub}</p>` : ''}${rodape(c)}</div></div>`;
     }
     return `<div class="post tipo"><div class="brilho"></div><div class="grao"></div>${topo(c)}
-      <div class="base"><div class="big">${c.big}</div><div class="regua"></div>${perfil}<h1>${marca(c.head)}</h1><p class="sub">${c.sub}</p>${rodape(c)}</div></div>`;
+      <div class="base"><div class="big">${c.big}</div><div class="regua"></div>${perfil}<h1>${marca(c.head)}</h1>${c.sub ? `<p class="sub">${c.sub}</p>` : ''}${rodape(c)}</div></div>`;
   }
 
   function slide(c, i) {
