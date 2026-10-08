@@ -7,7 +7,7 @@ import json, os, re, html
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 D = json.load(open(os.path.join(AQUI, "campanha.json"), encoding="utf-8"))
-CS = D["carrosseis"]
+CS = sorted(D["carrosseis"], key=lambda c: tuple(int(x) for x in reversed(c["data"].split("/"))))
 
 def esc(s):
     return html.escape(s, quote=True)
@@ -72,7 +72,7 @@ fotos = "".join(
 anuncios = "".join(
     f'<div class="anuncio"><p class="mono">ANÚNCIO · {esc(a["nome"]).upper()}</p><h4>{esc(a["titulo"])}</h4>'
     f'<pre class="legenda" id="ad-{i}">{esc(a["texto"])}</pre>'
-    f'<p class="peq">Imagem: {("fotos/" + a["foto"] + ".jpg") if a["foto"] else "capa tipográfica do c07 sem o título"}</p>'
+    f'<p class="peq">Imagem: {("fotos/" + a["foto"] + ".jpg") if a["foto"] else "modelo tipográfico (como a capa do c08) com R$250 no lugar do número"}</p>'
     f'<button type="button" class="copiar" data-alvo="ad-{i}">Copiar texto</button></div>'
     for i, a in enumerate(D["anuncios"]))
 
@@ -228,7 +228,7 @@ pre.legenda {{ margin: 0; white-space: pre-wrap; font: 400 15px/1.55 var(--texto
   </section>
 
   <section class="secao" id="completo">
-    <header><h2>Carrosséis completos</h2><p>Todos os slides prontos de duas pautas: a de hoje (guerra de fake) e a do Carnaval. Use o mesmo modelo (número grande, régua vermelha, texto em bloco) nos slides internos das outras.</p></header>
+    <header><h2>Carrosséis completos</h2><p>Todos os slides prontos de três pautas: a briga dos R$120 (hoje), a parte 2 do salário e a do Carnaval. Use o mesmo modelo (número grande, régua vermelha, texto em bloco) nos slides internos das outras.</p></header>
     {tiras}
   </section>
 
@@ -270,7 +270,7 @@ pre.legenda {{ margin: 0; white-space: pre-wrap; font: 400 15px/1.55 var(--texto
   <section class="secao" id="regras">
     <header><h2>Regras do jogo</h2><p>Agressivo na capa, correto nos fatos. Isso é o que evita post derrubado, anúncio reprovado e processo.</p></header>
     <ul class="regras">
-      <li><strong>Eleição só no orgânico</strong>As pautas 01 e 05 não podem ser impulsionadas. A Lei 9.504/97 (art. 57-C) só permite impulsionar conteúdo eleitoral a candidatos, partidos e coligações, e a Meta exige autorização para anúncio sobre política. Cite os dois candidatos ou nenhum.</li>
+      <li><strong>Eleição só no orgânico</strong>As pautas de eleição (01, 07 até o 2º turno, e 05) não podem ser impulsionadas. A Lei 9.504/97 (art. 57-C) só permite impulsionar conteúdo eleitoral a candidatos, partidos e coligações, e a Meta exige autorização para anúncio sobre política. Cite os dois candidatos ou nenhum.</li>
       <li><strong>Perfil de empresa não faz campanha</strong>A lei proíbe propaganda eleitoral em perfil de pessoa jurídica, mesmo de graça (Lei 9.504/97, art. 57-C, §1º). Polêmica pode, desde que seja fato com fonte: não peça voto, não ataque candidato, cite os dois lados.</li>\n      <li><strong>Foto de político ou famoso</strong>Só no orgânico e com crédito do fotógrafo ou agência. Uso comercial de imagem sem autorização pode gerar indenização (Código Civil, art. 20; STJ, Súmula 403). A capa 01 sai com “FOTO: REPRODUÇÃO”; troque pelo crédito real.</li>
       <li><strong>Renda sempre como exemplo</strong>Mostre a conta com custos e asterisco. Nunca “você vai ganhar”. A Meta reprova anúncio com promessa de ganho.</li>
       <li><strong>Saúde sem promessa</strong>Nada de “zero risco” ou “não inflama”. Nada de foto de ferida, sangue, infecção ou suspensão em anúncio.</li>

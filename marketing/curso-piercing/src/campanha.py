@@ -168,28 +168,30 @@ CARROSSEIS = [
         ],
     },
     {
-        "id": "c07", "data": "03/11", "dia": "ter", "nome": "R$ 1.741 (parte 2 da série salário)",
-        "publico": "Iniciante", "impulsionar": True,
-        "nota_impulso": "Pode impulsionar, mantendo a conta como exemplo e o asterisco visível. Nunca escreva “você vai ganhar”.",
-        "layout": "tipo", "big": "R$1.741",
-        "tag": "PLANTÃO", "topico": "ORÇAMENTO 2027",
-        "head": "É O SALÁRIO MÍNIMO PROPOSTO PRA 2027. UM PIERCER *FATURA ISSO EM 15 FUROS.**",
-        "sub": "*Conta de exemplo: R$120 por furo, antes de joia, material e impostos.",
-        "fonte": "Projeto de Lei Orçamentária 2027 · ago/2026",
+        "id": "c07", "data": "21/10", "dia": "qua", "nome": "R$1.741 em furos (parte 2 do salário)",
+        "publico": "Iniciante", "impulsionar": False,
+        "nota_impulso": "Só orgânico até o 2º turno: tema eleitoral e foto de candidato. Troque “reprodução” pelo crédito real da foto.",
+        "layout": "manchete", "foto": "lula-pb-rosto",
+        "tag": "PARTE 2", "topico": "2º TURNO · SALÁRIO MÍNIMO",
+        "head": "O MÍNIMO DE 2027 VIROU BRIGA DE CAMPANHA. UM PIERCER FATURA *R$1.741 EM 15 FUROS.**",
+        "sub": "*Exemplo: R$120 por furo, antes de joia, material e impostos.",
+        "fonte": "PLOA 2027 · ago/2026 · FOTO: REPRODUÇÃO",
         "slides": [
             "Capa.",
-            "O projeto de orçamento de 2027 prevê salário mínimo de R$1.741. Hoje é R$1.621. São R$120 a mais.",
-            "Agora a conta que ninguém te mostra.",
-            "Exemplo: furo a R$120. O preço muda por cidade; fontes do setor citam de R$40 a R$240 por furo, conforme região e joia.",
-            "R$1.741 ÷ R$120 = 14,5. Quinze furos. Menos de 4 por semana.",
-            "Isso é faturamento, não lucro. Sai joia, material descartável, espaço e impostos. E você precisa de alvará sanitário.",
-            "No começo você vai furar menos. Os primeiros clientes vêm de amigos, indicação e redes.",
-            "O curso custa R$250. É o valor de uns 2 furos.",
+            "Parte 2 da briga do salário. Na reta final, o mínimo virou *munição dos dois lados.*",
+            "Lula defende manter a política de valorização, que leva o mínimo a *R$1.741 em 2027.* Flávio promete *preservar o valor* do piso e chama a acusação de fake news.",
+            "Seja quem ganhar no dia 25, o valor final só sai em dezembro, com a inflação de novembro.",
+            "Agora a conta que *nenhum dos dois* faz por você.",
+            "Exemplo: furo a R$120. R$1.741 ÷ R$120 = 14,5. *Quinze furos.* Menos de 4 por semana.",
+            "Isso é faturamento, não lucro. Sai joia, material descartável, espaço e impostos. E você precisa de *alvará sanitário.*",
+            "No começo você fura menos. Os primeiros clientes vêm de amigos, indicação e redes.",
+            "O curso custa R$250. *É o valor de uns 2 furos.*",
             CTA_PADRAO,
         ],
-        "legenda": "R$1.741 é o salário mínimo proposto pra 2027.\n\nFiz a conta de quantos furos isso dá. Com os custos na mesa, sem prometer milagre.\n\nValores de exemplo; o preço do furo varia na sua cidade.",
+        "legenda": "O salário mínimo de 2027 virou briga de campanha. A proposta é R$1.741.\n\nFiz a conta de quantos furos isso dá, com os custos na mesa e sem prometer milagre.\n\nValores de exemplo; o preço do furo varia na sua cidade.",
         "fontes": [
             {"t": "Itatiaia: salário mínimo 2027, proposta de R$1.741", "u": "https://www.itatiaia.com.br/economia/salario-minimo-2027-proposta-r-1741/"},
+            {"t": "A Revista: Lula x Flávio, o que pode mudar no salário mínimo", "u": "https://arevista.com.br/economia/lula-x-flavio-o-que-pode-mudar-na-aposentadoria-no-bpc-e-no-salario-minimo-apos-a-eleicao/"},
             {"t": "Portal Insights: faixa de preço por furo (fonte do setor)", "u": "https://www.portalinsights.com.br/perguntas-frequentes/quanto-um-body-piercer-ganha"},
         ],
     },
@@ -298,7 +300,7 @@ CARROSSEIS = [
 ]
 
 # Carrossel renderizado inteiro (slides internos) como exemplo de estilo
-CARROSSEL_COMPLETO = ["c01", "c10"]
+CARROSSEL_COMPLETO = ["c01", "c07", "c10"]
 
 ANUNCIOS = [
     {"nome": "Medo", "foto": "piercer-noir",
