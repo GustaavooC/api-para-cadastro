@@ -3,7 +3,7 @@
 Campanha de newsjacking para o curso de body piercing (ticket R$250), out–nov/2026.
 
 - `plantao-piercing.html`: plano completo (espelho de pauta, roteiros, legendas, funil, regras).
-- `capas/`: capas 1080×1350 prontas para postar; `capas/c10/` é o carrossel completo do Carnaval.
+- `capas/`: capas 1080×1350 prontas para postar; `capas/c01/` (briga dos R$120) e `capas/c10/` (Carnaval) são carrosséis completos.
 - `fotos/`: foto do profissional tratada em vermelho sangue e preto (3 recortes × 2 tratamentos).
 - `src/`: fonte do conteúdo e dos renderizadores.
 

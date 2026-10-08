@@ -54,10 +54,14 @@ def pauta(c):
 
 pautas = "\n".join(pauta(c) for c in CS)
 
-comp = next(c for c in CS if c["id"] == D["completo"])
-tira = "".join(
-    f'<a href="capas/{comp["id"]}/{i:02d}.jpg" target="_blank" rel="noopener"><img src="capas/{comp["id"]}/{i:02d}.jpg" alt="Slide {i} de {len(comp["slides"])}" loading="lazy" width="1080" height="1350"></a>'
-    for i in range(1, len(comp["slides"]) + 1))
+def tira(comp):
+    imgs = "".join(
+        f'<a href="capas/{comp["id"]}/{i:02d}.jpg" target="_blank" rel="noopener"><img src="capas/{comp["id"]}/{i:02d}.jpg" alt="{esc(comp["nome"])}: slide {i} de {len(comp["slides"])}" loading="lazy" width="1080" height="1350"></a>'
+        for i in range(1, len(comp["slides"]) + 1))
+    return f'<h3>{esc(comp["nome"])} <span class="mono">· {len(comp["slides"])} slides · {comp["data"]}</span></h3><div class="tira">{imgs}</div>'
+
+COMPLETOS = [c for c in CS if c["id"] in D["completo"]]
+tiras = "".join(tira(c) for c in COMPLETOS)
 
 FOTOS = [("cena", "Sala inteira: descarte, EPI, bancada"), ("atendimento", "Piercer e cliente"), ("piercer", "Close do profissional")]
 fotos = "".join(
@@ -224,8 +228,8 @@ pre.legenda {{ margin: 0; white-space: pre-wrap; font: 400 15px/1.55 var(--texto
   </section>
 
   <section class="secao" id="completo">
-    <header><h2>Carrossel completo: {esc(comp["nome"])}</h2><p>Os {len(comp["slides"])} slides prontos. Use o mesmo modelo (número grande, régua vermelha, texto em bloco) para montar os slides internos das outras pautas.</p></header>
-    <div class="tira">{tira}</div>
+    <header><h2>Carrosséis completos</h2><p>Todos os slides prontos de duas pautas: a de hoje (guerra de fake) e a do Carnaval. Use o mesmo modelo (número grande, régua vermelha, texto em bloco) nos slides internos das outras.</p></header>
+    {tiras}
   </section>
 
   <section class="secao" id="fotos">
@@ -267,7 +271,7 @@ pre.legenda {{ margin: 0; white-space: pre-wrap; font: 400 15px/1.55 var(--texto
     <header><h2>Regras do jogo</h2><p>Agressivo na capa, correto nos fatos. Isso é o que evita post derrubado, anúncio reprovado e processo.</p></header>
     <ul class="regras">
       <li><strong>Eleição só no orgânico</strong>As pautas 01 e 05 não podem ser impulsionadas. A Lei 9.504/97 (art. 57-C) só permite impulsionar conteúdo eleitoral a candidatos, partidos e coligações, e a Meta exige autorização para anúncio sobre política. Cite os dois candidatos ou nenhum.</li>
-      <li><strong>Nada de foto de famoso ou político</strong>Uso comercial de imagem sem autorização gera indenização (Código Civil, art. 20; STJ, Súmula 403). Por isso as capas usam tipografia ou a foto do próprio profissional.</li>
+      <li><strong>Perfil de empresa não faz campanha</strong>A lei proíbe propaganda eleitoral em perfil de pessoa jurídica, mesmo de graça (Lei 9.504/97, art. 57-C, §1º). Polêmica pode, desde que seja fato com fonte: não peça voto, não ataque candidato, cite os dois lados.</li>\n      <li><strong>Foto de político ou famoso</strong>Só no orgânico e com crédito do fotógrafo ou agência. Uso comercial de imagem sem autorização pode gerar indenização (Código Civil, art. 20; STJ, Súmula 403). A capa 01 sai com “FOTO: REPRODUÇÃO”; troque pelo crédito real.</li>
       <li><strong>Renda sempre como exemplo</strong>Mostre a conta com custos e asterisco. Nunca “você vai ganhar”. A Meta reprova anúncio com promessa de ganho.</li>
       <li><strong>Saúde sem promessa</strong>Nada de “zero risco” ou “não inflama”. Nada de foto de ferida, sangue, infecção ou suspensão em anúncio.</li>
       <li><strong>Curso não é alvará</strong>Deixe claro na página de vendas que atender exige alvará sanitário. A Anvisa classifica piercing como atividade de alto risco.</li>

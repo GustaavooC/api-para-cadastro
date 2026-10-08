@@ -4,38 +4,46 @@
    "id": "c01",
    "data": "08/10",
    "dia": "qui",
-   "nome": "As pesquisas erraram",
+   "nome": "A briga dos R$120",
    "publico": "Ambos",
    "impulsionar": false,
-   "nota_impulso": "Cita eleição: só orgânico. Não impulsione.",
-   "layout": "foto",
-   "foto": "atendimento-noir",
+   "nota_impulso": "Só orgânico. Tema eleitoral com foto de candidato: não impulsione, cite os dois lados e troque “reprodução” pelo crédito real da foto.",
+   "layout": "manchete",
+   "foto": "lula-pb",
    "tag": "PLANTÃO",
-   "topico": "ELEIÇÕES 2026 · 1º TURNO",
-   "head": "AS PESQUISAS *ERRARAM.* A SUA SOBRE O MERCADO DE *PIERCING* TAMBÉM.",
-   "sub": "O que o 1º turno ensina pra quem fura (ou quer furar) em 2027.",
-   "fonte": "TSE · apuração de 04/10/2026",
+   "topico": "ELEIÇÕES 2026 · SALÁRIO MÍNIMO",
+   "head": "LULA E FLÁVIO BRIGAM POR *R$120* NO SALÁRIO MÍNIMO. UM PIERCER COBRA ISSO [NUM FURO.*]",
+   "sub": "R$120 é o aumento proposto pra 2027. *Preço de exemplo; varia por cidade.",
+   "fonte": "PLOA 2027: R$1.621 → R$1.741 · FOTO: REPRODUÇÃO",
    "slides": [
     "Capa.",
-    "4 de outubro. As pesquisas do ano apontavam Lula à frente no 1º turno. Resultado: Flávio 47,03%, Lula 45,16%.",
-    "Este post não é sobre política. É sobre o erro de olhar só a pesquisa e ignorar a rua.",
-    "A “pesquisa” que você escuta sobre piercing: “é moda passageira”. “Tem piercer demais.” “Ninguém paga caro por furo.”",
-    "A rua diz outra coisa: o piercing no umbigo voltou em 2026, a curated ear dominou o tapete vermelho do Oscar e tem famosa pagando até R$19 mil numa joia.",
-    "Saturado está o furo malfeito. Cliente não procura quem fura barato. Procura quem não deixa inflamar.",
-    "O que separa os dois: técnica com agulha, biossegurança de verdade, anatomia, joia certa e pós-cuidado bem explicado.",
-    "Iniciante: é isso que você aprende antes do primeiro cliente. Profissional: é isso que te tira da guerra de preço.",
-    "Curso de Body Piercing para iniciantes e profissionais. R$250 ou 12x. Link na bio.",
-    "Dia 25 o país decide. A sua decisão pode ser hoje."
+    "A briga do 2º turno chegou no seu bolso. O assunto da semana é o *salário mínimo.*",
+    "Lula acusa a campanha de Flávio de querer *desvincular as aposentadorias* do mínimo. Flávio chama de fake news e promete *preservar o valor* do piso.",
+    "O número oficial: o projeto de orçamento leva o mínimo de R$1.621 para *R$1.741 em 2027.* São R$120 a mais. E ainda pode mudar em dezembro.",
+    "Este post não é sobre em quem votar. É sobre quanto R$120 vale *na sua mão.*",
+    "Num estúdio, R$120 é *um furo.* (Exemplo: o preço muda por cidade; fontes do setor citam de R$40 a R$240 por furo.)",
+    "Um furo por dia, 20 dias no mês: *R$2.400 de faturamento.* Antes de joia, material, impostos e alvará.",
+    "O aumento do mínimo vem uma vez por ano, se vier. *O próximo cliente pode vir amanhã.*",
+    "Iniciante: aprende do zero, com biossegurança. Profissional: aprende a *cobrar mais de R$120.*",
+    "Curso de Body Piercing para iniciantes e profissionais. R$250 ou 12x. Link na bio."
    ],
-   "legenda": "As pesquisas erraram. E a sua leitura do mercado de piercing?\n\nEnquanto tem gente repetindo que “piercing é modinha”, o umbigo voltou, a orelha virou projeto e cliente paga caro por quem fura certo.\n\nIniciante ou profissional: o curso está no link da bio.",
+   "legenda": "Lula e Flávio estão brigando pelo salário mínimo. O aumento proposto pra 2027 é de R$120.\n\nNum estúdio de piercing, R$120 é um furo.\n\nQuem ganhar no domingo, a sua renda não precisa esperar Brasília. Curso de Body Piercing no link da bio.\n\n(Valores de exemplo; o preço do furo varia na sua cidade.)",
    "fontes": [
     {
-     "t": "Portal de Prefeitura: 100% das seções, Flávio 47,03%",
-     "u": "https://portaldeprefeitura.com.br/bastidores-da-politica/eleicoes-2026-com-100-das-secoes-totalizadas-flavio-tem-4703-e/633498/"
+     "t": "A Revista: Lula x Flávio, o que pode mudar no salário mínimo e na aposentadoria",
+     "u": "https://arevista.com.br/economia/lula-x-flavio-o-que-pode-mudar-na-aposentadoria-no-bpc-e-no-salario-minimo-apos-a-eleicao/"
     },
     {
-     "t": "Congresso em Foco: Flávio e Lula vão ao 2º turno",
-     "u": "https://www.congressoemfoco.com.br/noticia/122884/flavio-e-lula-vao-ao-segundo-turno-da-eleicao-presidencial"
+     "t": "SBT News: Flávio Bolsonaro promete preservar valor do salário mínimo",
+     "u": "https://sbtnews.sbt.com.br/noticia/eleicoes/flavio-bolsonaro-promete-preservar-valor-do-salario-minimo"
+    },
+    {
+     "t": "CNN Brasil: Flávio diz que mudar salário mínimo é fake news de campanha",
+     "u": "https://www.cnnbrasil.com.br/eleicoes/a-cnn-flavio-diz-que-mudar-salario-minimo-e-fake-news-de-campanha/"
+    },
+    {
+     "t": "Itatiaia: salário mínimo 2027, proposta de R$1.741",
+     "u": "https://www.itatiaia.com.br/economia/salario-minimo-2027-proposta-r-1741/"
     }
    ]
   },
@@ -225,7 +233,7 @@
    "id": "c07",
    "data": "03/11",
    "dia": "ter",
-   "nome": "R$ 1.741",
+   "nome": "R$ 1.741 (parte 2 da série salário)",
    "publico": "Iniciante",
    "impulsionar": true,
    "nota_impulso": "Pode impulsionar, mantendo a conta como exemplo e o asterisco visível. Nunca escreva “você vai ganhar”.",
@@ -411,7 +419,10 @@
    ]
   }
  ],
- "completo": "c10",
+ "completo": [
+  "c01",
+  "c10"
+ ],
  "anuncios": [
   {
    "nome": "Medo",
